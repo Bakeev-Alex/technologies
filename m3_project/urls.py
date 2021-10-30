@@ -33,8 +33,8 @@ def workspace(request):
 
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    path(r'^$', workspace),
+    path('admin/', admin.site.urls),
+    path('', workspace),
 ]
 
 urlpatterns.extend(get_app_urlpatterns())
